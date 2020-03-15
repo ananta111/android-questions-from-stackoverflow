@@ -9,8 +9,8 @@ class HomePage extends Component{
         return (
             <div className={"center"}>
                 <h1>YOUR TOP ANDROID QUESTIONS FROM STACK OVERFLOW</h1>
-                <Button variant={"outlined"} href={"/inventory"}>10 Most Recent Questions</Button>
-                <Button variant={"outlined"} href={"/questionnaire"}>10 Most Voted Questions</Button>
+                <Button variant={"outlined"} href={"/top-ten-recent"}>10 Most Recent Questions</Button>
+                <Button variant={"outlined"} href={"/top-ten-voted"}>10 Most Voted Questions</Button>
             </div>
         )
     }

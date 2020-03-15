@@ -26,6 +26,25 @@ export async function getMostRecentQuestions(tags, page){
 }
 
 
-export async function getMostVotedQuestions(){
+export async function getMostVotedQuestions(tags, page){
+
+    const limit = 10;
+    const search_query = "android";
+    let toDate = moment().unix();
+    let fromDate = moment().subtract(1, "week").unix();
+
+    const params = {
+        q: search_query,
+        tagged: tags,
+        site: site,
+        todate: toDate,
+        fromdate: fromDate,
+        sort: "votes",
+        order: "desc",
+        page: page,
+        pagesize: 10
+    };
+
+    return await axios.get(URL, {params} )
 
 }

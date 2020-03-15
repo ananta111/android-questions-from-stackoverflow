@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
 import MenuBar from "./components/MenuBar";
 import {Route, BrowserRouter} from "react-router-dom"
-import Results from "./components/Results";
+import MostRecent from "./components/MostRecent";
+import MostVoted from "./components/MostVoted";
+import HomePage from "./components/HomePage";
 class App extends React.Component {
 
 
@@ -11,7 +13,9 @@ class App extends React.Component {
         <div>
           <MenuBar/>
           <BrowserRouter>
-              <Route path="/" component={Results} />
+              <Route exact path="/" component={HomePage} />
+              <Route path="/top-ten-recent" component={MostRecent} />
+              <Route path="/top-ten-voted" component={MostVoted} />
           </BrowserRouter>
         </div>
     )

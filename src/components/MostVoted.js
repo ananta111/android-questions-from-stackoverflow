@@ -2,19 +2,22 @@ import React, { Component } from "react";
 import "../custom-styles.css"
 import Button from "@material-ui/core/Button";
 import ResultRow from "./ResultRow";
-import {getMostRecentQuestions} from "../api/api-requests";
+import {getMostRecentQuestions, getMostVotedQuestions} from "../api/api-requests";
 import moment from "moment";
 
-class Results extends Component{
+class MostVoted extends Component{
 
     state = {
-        results: []
+        results: [],
+        tags: "android",
+        page: 1
     }
 
     async componentDidMount() {
-        let res = await getMostRecentQuestions();
-        console.log(res);
+        let res = await getMostVotedQuestions();
+        console.log("result", res);
         res = res.data.items;
+        console.log(res);
         let finalResult = [];
         let number = 0;
         res.forEach(item => {
@@ -31,19 +34,14 @@ class Results extends Component{
         return time_diff
     }
 
-    handleBack = () => {
-        document.location = "/questionnaire"
-    }
-
     render() {
-        console.log("logged from results", this.state.results)
         return (
             <div className={"center"}>
-                <h1>Here are your 10 most recent android questions</h1>
+                <h1>Here are your 10 most voted android questions from Stack Overflow</h1>
                 { this.state.results && this.state.results.map(item => <ResultRow item = { item }/>) }<br/>
             </div>
         )
     }
 }
 
-export default Results;
+export default MostVoted;
