@@ -1,0 +1,46 @@
+.center {
+    margin: auto;
+    border: 3px dotted darkslateblue;
+    padding: 3em;
+}
+
+.resultrow {
+    width: auto;
+    border: 3px  darkslateblue;
+    margin-top: 1em;
+    marging-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-top: 1em;
+    background-color: aliceblue;
+
+}
+
+.info {
+    font-family: Verdana;
+}
+
+.resultrowtext {
+    position: relative;
+}
+
+.postdate-info{
+    position: relative;
+    float: right;
+}
+
+.loader {
+    position: absolute;
+    z-index: 1000000000;
+    background-position: center;
+    background-color: #f3f3f3;
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    opacity: 0.4;
+    animation: spin 2s linear infinite;
+}
+
+
