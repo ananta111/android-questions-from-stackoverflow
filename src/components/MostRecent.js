@@ -25,7 +25,7 @@ class MostRecent extends Component{
         let number = 0;
         res.forEach(item => {
             number++;
-            const filteredItem = { number: number, title: item.title, link: item.link, creation_date: this.calculateCreatedAgo(item.creation_date) }
+            const filteredItem = { number: number, title: item.title, link: item.link, creation_date: this.calculateCreatedAgo(item.creation_date), body: item.body }
             finalResult.push(filteredItem)
         });
         this.setState({ results: finalResult })
@@ -40,7 +40,7 @@ class MostRecent extends Component{
     render() {
         return (
             <div className={"center"}>
-                <h1>Here are your 10 most recent android questions from Stack OverFlow</h1>
+                <h1>Here are your 10 newest android related questions from Stack OverFlow</h1>
                 { this.state.results && this.state.results.map(item => <ResultRow item = { item }/>) }<br/>
             </div>
         )

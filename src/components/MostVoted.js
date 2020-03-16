@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../custom-styles.css"
 import ResultRow from "./ResultRow";
-import {getMostRecentQuestions, getMostVotedQuestions} from "../api/api-requests";
+import { getMostVotedQuestions} from "../api/api-requests";
 import moment from "moment";
 
 class MostVoted extends Component{
@@ -25,7 +25,7 @@ class MostVoted extends Component{
         let number = 0;
         res.forEach(item => {
             number++;
-            const filteredItem = { number: number, title: item.title, link: item.link, creation_date: this.calculateCreatedAgo(item.creation_date) }
+            const filteredItem = { number: number, title: item.title, link: item.link, creation_date: this.calculateCreatedAgo(item.creation_date), body: item.body }
             finalResult.push(filteredItem)
         });
         this.setState({ results: finalResult })

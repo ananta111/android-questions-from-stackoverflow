@@ -17,6 +17,7 @@ export async function getMostRecentQuestions(tags, page){
         order: "desc",
         page: page,
         pagesize: limit,
+        filter : "withbody"
     };
 
     return  await axios.get(URL, {params} )
@@ -39,7 +40,8 @@ export async function getMostVotedQuestions(tags, page){
         sort: "votes",
         order: "desc",
         page: page,
-        pagesize: limit
+        pagesize: limit,
+        filter: "withbody"
     };
 
     return await axios.get(URL, {params} )
