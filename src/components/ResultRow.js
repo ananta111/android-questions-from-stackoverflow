@@ -11,6 +11,7 @@ class ResultRow extends Component{
         link: "",
         creation_date: null,
         body: "",
+        is_answered: null,
         showBody: false
     };
 
@@ -27,15 +28,21 @@ class ResultRow extends Component{
 
     handleDialogClose = () => {
         this.setState({showBody: false})
-        console.log("asdas", this.state)
     }
 
+    isAnswered(is_answered) {
+        if (is_answered){
+            return "Answered"
+        }
+
+        return "Not Answered Yet"
+    }
 
     render() {
         return (
             <div className={"resultrow"}>
                 <div className={"resultrow-text"}>
-                    <span className={"postdate-info"}>Posted {this.state.creation_date}</span>
+                    <span className={"postdate-info"}>Posted {this.state.creation_date} ({this.isAnswered(this.state.is_answered)})</span>
                     <h4>{this.state.number}. {this.state.title} <span><Button onClick={this.handleButtonClick} color="secondary">Click here to read full question</Button></span></h4>
                     <p>Link: <a href={this.state.link} target={"_blank"}>{this.state.link} </a></p>
                     { this.state.showBody && <OpenDialog handleDialogClose= {this.handleDialogClose} showBody = {this.state.showBody} body = {this.state.body}/> }

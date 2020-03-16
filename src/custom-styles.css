@@ -19,8 +19,16 @@
     font-family: Verdana;
 }
 
+.pagenumber {
+    padding: 0.5em;
+}
+
 .resultrow-text {
     position: relative;
+}
+
+.switch {
+    padding: 0.5em;
 }
 
 .postdate-info{
