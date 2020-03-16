@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Access this application at https://stack-android-util.herokuapp.com.
+Access this application at https://stack-android-util.herokuapp.com or run it locally by following the steps below.
 
 ## Available Scripts
 
