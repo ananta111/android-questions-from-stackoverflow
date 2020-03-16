@@ -34,6 +34,7 @@
 .postdate-info{
     position: relative;
     float: right;
+    padding: 1em;
 }
 
 .loader {
