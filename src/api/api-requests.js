@@ -3,6 +3,7 @@ import moment from "moment"
 
 const URL =  "https://api.stackexchange.com/2.2/search/advanced";
 const site = "stackoverflow"
+const api_key = process.env.REACT_APP_API_KEY
 
 export async function getMostRecentQuestions(tags, page){
     const limit = 10;
@@ -19,7 +20,8 @@ export async function getMostRecentQuestions(tags, page){
         sort: "creation",
         order: "desc",
         page: page,
-        pagesize: 10
+        pagesize: 10,
+        key: api_key
     };
 
     return await axios.get(URL, {params} )
