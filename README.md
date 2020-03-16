@@ -1,4 +1,8 @@
+### A UTILITY APP TO VIEW TOP 10 ANDROID RELATED QUESTIONS FROM STACKOVERFLOW 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Access this application at https://stack-android-util.herokuapp.com.
 
 ## Available Scripts
 
@@ -47,7 +51,7 @@ Your app is ready to be deployed!
 
 ## ADDITIONAL NOTES
 - This application uses Stack Exchange's API. Rate limiting is enforced from the Stack Exchange's end. If there is a Network Error or other forms of error alerts, it could be from the API, in which case please let me know or report the issue here
-- Currently, the application is deployed in Heroku Cloud at https://stack-android-util.herokuapp.com. This is a free version available for students. Therefore, the app might take some time to load. 
+- Currently, the application is deployed to Heroku Cloud at https://stack-android-util.herokuapp.com. This is a free version available for students. Therefore, the app might take some time to load. 
 - If the app doesn't load properly, follow the steps above to run it locally. 
 
 
