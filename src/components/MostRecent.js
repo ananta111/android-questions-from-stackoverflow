@@ -10,12 +10,16 @@ class MostRecent extends Component{
         results: [],
         tags: "android",
         page: 1
-    }
+    };
 
-    async componentDidMount() {
-        const tags = "android";
-        const page = 1;
-        let res = await getMostRecentQuestions(this.state.tags, this.state.page);
+     async componentDidMount() {
+        let res;
+        try {
+            res =  await getMostRecentQuestions(this.state.tags, this.state.page);
+        } catch (e) {
+            alert(e.message);
+            return
+        }
         res = res.data.items;
         let finalResult = [];
         let number = 0;
@@ -31,15 +35,7 @@ class MostRecent extends Component{
         const time_diff = moment.unix(creationDate).fromNow()
         //console.log("Time Difference, time_diff)
         return time_diff
-    }
-
-    toggleChecked = () => {
-        this.setState({filter: "most-voted"})
-    }
-
-    handleBack = () => {
-        document.location = "/questionnaire"
-    }
+    };
 
     render() {
         return (

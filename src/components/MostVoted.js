@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "../custom-styles.css"
-import Button from "@material-ui/core/Button";
 import ResultRow from "./ResultRow";
 import {getMostRecentQuestions, getMostVotedQuestions} from "../api/api-requests";
 import moment from "moment";
@@ -14,10 +13,14 @@ class MostVoted extends Component{
     }
 
     async componentDidMount() {
-        let res = await getMostVotedQuestions();
-        console.log("result", res);
+        let res;
+        try {
+            res =  await getMostVotedQuestions(this.state.tags, this.state.page);
+        } catch (e) {
+            alert(e.message);
+            return
+        }
         res = res.data.items;
-        console.log(res);
         let finalResult = [];
         let number = 0;
         res.forEach(item => {
@@ -32,7 +35,7 @@ class MostVoted extends Component{
         const time_diff = moment.unix(creationDate).fromNow()
         //console.log("Time Difference, time_diff)
         return time_diff
-    }
+    };
 
     render() {
         return (
