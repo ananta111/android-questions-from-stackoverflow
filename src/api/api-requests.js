@@ -1,7 +1,7 @@
 import axios from "axios"
 import moment from "moment"
 
-const URL =  "https://api.stackexchange.com/2.2/search/advanced?key=" + process.env.REACT_APP_API_KEY; //API KEY from stack exchange [rate limiting enforced]
+const URL =  "https://api.stackexchange.com/2.2/search/advanced?key=" + "fmadDHyKrV)4fxjpgN0JUQ(("; //API KEY from stack exchange [rate limiting enforced]
 const site = "stackoverflow";
 const limit = 10;
 const search_query = "android";
