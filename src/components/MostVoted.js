@@ -57,7 +57,7 @@ class MostVoted extends Component{
         const page = this.state.page + 1;
         const results = await this.fetchData(page, this.state.acceptedAnswersOnly);
         this.setState({results, page});
-        console.log(this.state)
+        //console.log(this.state)
     };
 
     handlePreviousTen = async () => {
