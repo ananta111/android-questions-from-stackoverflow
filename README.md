@@ -56,7 +56,7 @@ Your app is ready to be deployed!
 - This application uses Stack Exchange's API. Rate limiting is enforced from the Stack Exchange's end. If there is a Network Error or other forms of error alerts, it could be from the API, in which case please let me know or report the issue here
 - Currently, the application is deployed to Heroku Cloud at https://stack-android-util.herokuapp.com. This is a free version available for students. Therefore, the app might take some time to load and sometimes fail to load. 
 - If the app doesn't load properly, follow the steps above to run it locally.
-- Network errors caused by the API will be displayed as an alert. Please report an issue or contact me at athapaliya@claflin.edu if the application shows problems related to data fetching
+- Network errors caused by the API will be displayed as an alert. Please report an issue or contact me at athapaliya@claflin.edu if the application shows problems related to data fetching.
 
 
 
