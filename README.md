@@ -29,10 +29,10 @@ Your app is ready to be deployed!
 
 ## Available Features
 1. View the 10 most recent Android related questions on stackoverflow at present in descending order.
-- Click on the 10 MOST RECENT QUESTIONS tab on the homepage or the navigation bar to access this feature.
+- Click on the 10 MOST RECENT QUESTIONS tab on the homepage or the navigation bar to access this feature. You will also see the links to the original stackoverflow page. 
 
 2. View the 10 most voted Android related questions during the past seven days in descending order.
-- Click on the 10 MOST VOTED QUESTIONS tab on the homepage or the navigation bar to access this feature. <br/>
+- Click on the 10 MOST VOTED QUESTIONS tab on the homepage or the navigation bar to access this feature. You will also see the links to the original stackoverflow page. <br/>
 
 3. Pagination implemented for (1) and (2) 
 - If you wish to view 10 more questions matching the revelant criteria, you may click on the NEXT TEN button available above the results component. <br/>
