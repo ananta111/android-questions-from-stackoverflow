@@ -7,6 +7,7 @@ This application is deployed to a free student version of heroku cloud. So, some
 Access this application at https://stack-android-util.herokuapp.com or run it locally by following the steps below.
 
 ## Available Scripts
+(To run the app locally, node should be installed on your system first. Go to https://www.npmjs.com/get-npm  for more information)
 
 In the project directory, you can run:
 
