@@ -9,7 +9,7 @@ Access this application at https://stack-android-util.herokuapp.com or run it lo
 ## Available Scripts
 (To run the app locally, node should be installed on your system first. Go to https://www.npmjs.com/get-npm  for more information)
 
-In the project directory, you can run:
+First, download or clone this repository. In the project directory, you can run:
 
 ### `npm start`
 
