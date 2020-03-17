@@ -49,8 +49,8 @@ Your app is ready to be deployed!
 
 6. Posted date and the status of the question
 - The posted date is visible beside each question.
-- In addition, this region also shows if the question is answered yet.
-- "Answered" means some users have answered a particular question. It doesn't imply that the answer was accepted
+- In addition, this region also shows if the question has been answered yet.
+- "Answered" means some users have answered the particular question. It doesn't imply that the answer was accepted.
 - "Not Answered Yet" means no user has answered the question.
 
 
