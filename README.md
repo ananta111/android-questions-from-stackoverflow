@@ -27,28 +27,28 @@ The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
 ## Available Features
-1. View the 10 most recent Android related questions on stackoverflow at present in descending order
-- Click on the 10 MOST RECENT QUESTIONS tab on the homepage or the navigation bar to access this feature
+1. View the 10 most recent Android related questions on stackoverflow at present in descending order.
+- Click on the 10 MOST RECENT QUESTIONS tab on the homepage or the navigation bar to access this feature.
 
-2. View the 10 most voted Android related questions during the past seven days in descending order
-- Click on the 10 MOST VOTED QUESTIONS tab on the homepage or the navigation bar to access this feature <br/>
+2. View the 10 most voted Android related questions during the past seven days in descending order.
+- Click on the 10 MOST VOTED QUESTIONS tab on the homepage or the navigation bar to access this feature. <br/>
 
 3. Pagination implemented for (1) and (2) 
-- If you wish to view 10 more questions matching the revelant criteria, you may click on the NEXT TEN button available above the results component <br/>
+- If you wish to view 10 more questions matching the revelant criteria, you may click on the NEXT TEN button available above the results component. <br/>
 - You may also go back to the previous 10 questions by clicking on the PREVIOUS TEN button available above the results component. 
-- The results might slightly vary as you go back and forth because the API sends the real-time data updated frequently
+- The results might slightly vary as you go back and forth because the API sends the real-time data updated frequently.
 
-4. A toggle switch is implemented to filter out those questions with accepted answers
-- Feel free to use the toggle to get only those questions with accepted answers
+4. A toggle switch is implemented to filter out those questions with accepted answers.
+- Feel free to use the toggle to get only those questions with accepted answers.
 
-5. Open the full question as a new dialog
-- Click on the red "READ FULL QUESTION" button to access this feature
+5. Open the full question as a new dialog.
+- Click on the red "READ FULL QUESTION" button to access this feature.
 
-6. Posted dates and the status
-- The posted date is visible beside each question
+6. Posted date and the status of the question
+- The posted date is visible beside each question.
 - In addition, this region also shows if the question is answered yet.
 - "Answered" means some users have answered a particular question. It doesn't imply that the answer was accepted
-- "Not Answered Yet" means nobody has answered the question
+- "Not Answered Yet" means no user has answered the question.
 
 
 ## NOTES
