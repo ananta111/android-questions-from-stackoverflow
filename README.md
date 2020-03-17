@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and uses Stack Exchange's API (rate limiting enforced). 
 
-This application is deployed to a free student version of heroku cloud. So, some performance issues have been seen. Please note that the link might take a while to load for the first time. Nevertheless, the link should still work fine most of the time. If it doesn't, please feel free to run the app locally as directed below.
+This application is deployed to a free student version of heroku cloud. So, some performance issues have been seen. Please note that the link might take a while to load for the first time. Nevertheless, the link should still work fine if you try it a few more times most of the time. If it doesn't, please feel free to run the app locally as directed below.
 
 Access this application at https://stack-android-util.herokuapp.com or run it locally by following the steps below.
 
